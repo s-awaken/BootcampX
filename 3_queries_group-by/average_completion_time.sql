@@ -1,4 +1,4 @@
-SELECT cohorts.name as cohort, AVG(assignment_submissions.*) as average_submission_time
+SELECT cohorts.name as cohort, AVG(assignment_submissions.id) as average_submission_time
 FROM assignment_submissions
 JOIN students ON students.id = student_id
 JOIN cohorts ON cohorts.id = cohort_id
